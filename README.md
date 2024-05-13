@@ -151,7 +151,8 @@ Dari visualisasi pada Looker, berikut ini adalah insight yang berhasil didapatka
 | 6  | Top 5 produk yang diorder pelanggan yaitu eBooks, training videos, blueprint, drone kits, dan drones                         |
 | 7  | Top 5 produk berdasarkan total sales yaitu robots, drones, robot kits, drone kits, training videos                           |
 | 8  | Tidak ada pola signifikan dari total order setiap bulannya                                                                   |
-
+<br>
+<br>
 **Business Recommendations**
 
 Dari insight yang telah kita peroleh, kita dapat menentukan rekomendasi bisnis seperti di bawah ini.
@@ -168,6 +169,9 @@ Dari insight yang telah kita peroleh, kita dapat menentukan rekomendasi bisnis s
 |    | reward poin diberikan kepada pelanggan kita yang telah melakukan repeat order. Reward poin dapat ditukarkan dengan diskon pembelian atau merchandise tertentu | 
 | 5  | **Update secara rutin pada produk kategori ebook**												    |
 |    | ebook termasuk kategori produk yang jumlah pembeliannya paling tinggi dari pada kategori lainnya. dengan rutin menyediakan ebook baru setiap bulannya, diharapkan dapat menaikan sales perusahaan | 
+---
+<br>
 
-
-
+*Special thanks to our mentor*
+*Kak Bobby Christian*
+i'll be forever grateful for your knowledge and guidance.
