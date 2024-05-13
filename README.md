@@ -172,6 +172,6 @@ Dari insight yang telah kita peroleh, kita dapat menentukan rekomendasi bisnis s
 ---
 <br>
 
-*Special thanks to our mentor*
-*Kak Bobby Christian*
+*Special thanks to our mentor*<br>
+*Kak Bobby Christian*<br>
 i'll be forever grateful for your knowledge and guidance.
