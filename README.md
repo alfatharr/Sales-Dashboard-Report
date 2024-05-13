@@ -112,7 +112,8 @@ Berikut ini adalah Entity Relationship Diagram berdasarkan foreign key yang tela
 ![image](https://github.com/alfatharr/Sales-Dashboard-Report/assets/156917349/ccb1683d-2f07-4527-863a-4e5fb3de6044)<br>
 <br>
 
-Bisa kita lihat pada ERD tersebut bahwa keempat tabel memiliki hubungan one-to-many, artinya setiap satu entitas dapat terhubung dengan banyak entitas lainnya.
+Bisa kita lihat pada ERD tersebut bahwa keempat tabel memiliki hubungan one-to-many, artinya setiap satu entitas dapat terhubung dengan banyak entitas lainnya.<br>
+
 ---
 ## 3. Tabel Master
 Tabel master digunakan untuk membuat visualisasi di Looker. Berikut ini adalah query yang digunakan untuk membuat tabel master tersebut.
