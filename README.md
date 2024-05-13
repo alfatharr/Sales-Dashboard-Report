@@ -1,4 +1,4 @@
-![image](https://github.com/alfatharr/Sales-Dashboard-Report/assets/156917349/b699fd93-ea65-4fcc-bdcc-2d8d68f7d88a)# Sales Dashboard Report
+# Sales Dashboard Report
 
 **Tool** : PostgreSQL<br>
 **Programming Language** : SQL<br>
@@ -136,11 +136,13 @@ Berikut ini adalah sales dashboard yang telah dibuat di Google Looker.
 ![image](https://github.com/alfatharr/Sales-Dashboard-Report/assets/156917349/99713a19-5c9a-4fcf-b42e-cdb0768a51dd)
 ---
 ## 5. Insight dan Business Recommendations
-<br>
+
 **Insight**
+
 Dari visualisasi pada Looker, berikut ini adalah insight yang berhasil didapatkan.
-| No | Insight                                                                                                                      |  
-| -- | --------------------------------------------------------------------------------------------------------------------------   | 
+<br>
+| No | 								Insight                                                             |  
+| -- | ---------------------------------------------------------------------------------------------------------------------------- | 
 | 1  | Total penjualan ebooks terbanyak dari semua kategori produk, namun hanya menghasilkan keuntungan 3%                          | 
 | 2  | Total penjualan robot termasuk dua terbawah, namun menghasilkan keuntungan paling besar sebanyak 42% dari total sales        |
 | 3  | Kota Washington menjadi penyumbang total sales terbesar dari keseluruhan kota di Amerika                                     |
@@ -150,7 +152,22 @@ Dari visualisasi pada Looker, berikut ini adalah insight yang berhasil didapatka
 | 7  | Top 5 produk berdasarkan total sales yaitu robots, drones, robot kits, drone kits, training videos                           |
 | 8  | Tidak ada pola signifikan dari total order setiap bulannya                                                                   |
 
+**Business Recommendations**
 
+Dari insight yang telah kita peroleh, kita dapat menentukan rekomendasi bisnis seperti di bawah ini.
+<br>
+| No | 						Business Recommendations                                                            |  
+| -- | ---------------------------------------------------------------------------------------------------------------------------- | 
+| 1  | **Membuat paket bundling**													    |
+|    | dengan adanya paket bundling biasanya pelanggan dapat menghemat biaya karena harga yang ditawarkan akan lebih murah daripada membeli satuan, sehingga dapat meningkatkan jumlah order	 | 
+| 2  | **Promosi diskon spesial hari libur**												    |
+|    | dengan adanya promo diskon pada hari-hari tertentu atau hari libur spesial contohnya seperti promo diskon pada hari Natal dan tahun baru | 
+| 3  | **Meningkatkan kualitas training videos**												    |
+|    | penjualan training videos termasuk cukup tinggi dan cenderung mengalami peningkatan setiap tahunnya. Memperhatikan  kualitas video, seperti isi konten dan editing video, serta  menambah konten baru dengan rutin dapat menarik pelanggan untuk berlangganan dengan produk kita | 
+| 4  | **Memberikan reward poin**												    |
+|    | reward poin diberikan kepada pelanggan kita yang telah melakukan repeat order. Reward poin dapat ditukarkan dengan diskon pembelian atau merchandise tertentu | 
+| 5  | **Update secara rutin pada produk kategori ebook**												    |
+|    | ebook termasuk kategori produk yang jumlah pembeliannya paling tinggi dari pada kategori lainnya. dengan rutin menyediakan ebook baru setiap bulannya, diharapkan dapat menaikan sales perusahaan | 
 
 
 
