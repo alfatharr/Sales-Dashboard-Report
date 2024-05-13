@@ -108,8 +108,10 @@ Relasi antartabel dimaksudkan untuk mengetahui bagaimana hubungan dari suatu tab
 
 Berikut ini adalah Entity Relationship Diagram berdasarkan foreign key yang telah kita buat.<br>
 <br>
+
 ![image](https://github.com/alfatharr/Sales-Dashboard-Report/assets/156917349/ccb1683d-2f07-4527-863a-4e5fb3de6044)<br>
 <br>
+
 Bisa kita lihat pada ERD tersebut bahwa keempat tabel memiliki hubungan one-to-many, artinya setiap satu entitas dapat terhubung dengan banyak entitas lainnya.
 ---
 ## 3. Tabel Master
