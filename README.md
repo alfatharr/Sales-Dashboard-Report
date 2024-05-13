@@ -106,8 +106,10 @@ Relasi antartabel dimaksudkan untuk mengetahui bagaimana hubungan dari suatu tab
 | 2  | orders dan products    | 'order_id'         |
 | 3  | products dan category  | 'product_cat'      |
 
-Berikut ini adalah Entity Relationship Diagram berdasarkan foreign key yang telah kita buat.
-![image](https://github.com/alfatharr/Sales-Dashboard-Report/assets/156917349/ccb1683d-2f07-4527-863a-4e5fb3de6044)
+Berikut ini adalah Entity Relationship Diagram berdasarkan foreign key yang telah kita buat.<br>
+<br>
+![image](https://github.com/alfatharr/Sales-Dashboard-Report/assets/156917349/ccb1683d-2f07-4527-863a-4e5fb3de6044)<br>
+<br>
 Bisa kita lihat pada ERD tersebut bahwa keempat tabel memiliki hubungan one-to-many, artinya setiap satu entitas dapat terhubung dengan banyak entitas lainnya.
 ---
 ## 3. Tabel Master
@@ -117,7 +119,9 @@ SELECT 	o.order_date,
 	ct.category_name,	
 	p.product_name,	
 	p.product_price,	
-	o.order_qty,			p.product_price * o.order_qty AS total_sales,	cs.email,	
+	o.order_qty,
+	p.product_price * o.order_qty AS total_sales,
+	cs.email,	
 	cs.city
 FROM orders o 
 JOIN customers cs ON cs.cust_id = o.cust_id	
@@ -126,13 +130,16 @@ JOIN category ct ON ct.product_cat = p.product_cat
 ORDER BY o.order_date ASC
 ```
 
-Dari query tabel master di atas akan menghasilkan tabel sebagai berikut.
+Dari query tabel master di atas akan menghasilkan tabel sebagai berikut.<br>
+<br>
+
 ![image](https://github.com/alfatharr/Sales-Dashboard-Report/assets/156917349/25fdd227-a1a2-48bf-b153-7188b4c44613)
 ---
 ## 4. Visualisasi
 Visualisasi data merupakan alat yang kuat untuk mempermudah pemahaman data. Dengan mengubah data yang kompleks menjadi bentuk visual seperti grafik, diagram, peta, dan infografik, kita dapat lebih cepat dan lebih mudah memahami informasi.<br>
 
-Berikut ini adalah sales dashboard yang telah dibuat di Google Looker.
+Berikut ini adalah sales dashboard yang telah dibuat di Google Looker.<br>
+
 ![image](https://github.com/alfatharr/Sales-Dashboard-Report/assets/156917349/99713a19-5c9a-4fcf-b42e-cdb0768a51dd)
 ---
 ## 5. Insight dan Business Recommendations
