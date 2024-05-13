@@ -1,4 +1,4 @@
-# Sales Dashboard Report
+![image](https://github.com/alfatharr/Sales-Dashboard-Report/assets/156917349/b699fd93-ea65-4fcc-bdcc-2d8d68f7d88a)# Sales Dashboard Report
 
 **Tool** : PostgreSQL<br>
 **Programming Language** : SQL<br>
@@ -96,4 +96,61 @@ Setelah database dan tabel dibuat, kita bisa menentukan primary key untuk setiap
 | 2  | orders        | 'order_id'         |
 | 3  | products      | 'product_id'       |
 | 4  | category      | 'product_cat'      |
+---
+## 2. Relasi Antartabel
+Relasi antartabel dimaksudkan untuk mengetahui bagaimana hubungan dari suatu tabel ke tabel lainnya melalui minimal satu kolom yang valuenya sama-sama ada pada kedua tabel. Constraint yang kita gunakan adalah **foreign key**, yaitu pengenal unique yang menghubungkan kedua tabel.<br>
+
+| No | Tabel                  |  Foreign Key       |
+| -- | --------------------   | ------------------ |
+| 1  | cutsomers dan orders   | 'cust_id'          |
+| 2  | orders dan products    | 'order_id'         |
+| 3  | products dan category  | 'product_cat'      |
+
+Berikut ini adalah Entity Relationship Diagram berdasarkan foreign key yang telah kita buat.
+![image](https://github.com/alfatharr/Sales-Dashboard-Report/assets/156917349/ccb1683d-2f07-4527-863a-4e5fb3de6044)
+Bisa kita lihat pada ERD tersebut bahwa keempat tabel memiliki hubungan one-to-many, artinya setiap satu entitas dapat terhubung dengan banyak entitas lainnya.
+---
+## 3. Tabel Master
+Tabel master digunakan untuk membuat visualisasi di Looker. Berikut ini adalah query yang digunakan untuk membuat tabel master tersebut.
+```
+SELECT 	o.order_date,	
+	ct.category_name,	
+	p.product_name,	
+	p.product_price,	
+	o.order_qty,			p.product_price * o.order_qty AS total_sales,	cs.email,	
+	cs.city
+FROM orders o 
+JOIN customers cs ON cs.cust_id = o.cust_id	
+JOIN products p ON p.product_id = o.product_id
+JOIN category ct ON ct.product_cat = p.product_cat
+ORDER BY o.order_date ASC
+```
+
+Dari query tabel master di atas akan menghasilkan tabel sebagai berikut.
+![image](https://github.com/alfatharr/Sales-Dashboard-Report/assets/156917349/25fdd227-a1a2-48bf-b153-7188b4c44613)
+---
+## 4. Visualisasi
+Visualisasi data merupakan alat yang kuat untuk mempermudah pemahaman data. Dengan mengubah data yang kompleks menjadi bentuk visual seperti grafik, diagram, peta, dan infografik, kita dapat lebih cepat dan lebih mudah memahami informasi.<br>
+
+Berikut ini adalah sales dashboard yang telah dibuat di Google Looker.
+![image](https://github.com/alfatharr/Sales-Dashboard-Report/assets/156917349/99713a19-5c9a-4fcf-b42e-cdb0768a51dd)
+---
+## 5. Insight dan Business Recommendations
+<br>
+**Insight**
+Dari visualisasi pada Looker, berikut ini adalah insight yang berhasil didapatkan.
+| No | Insight                                                                                                                      |  
+| -- | --------------------------------------------------------------------------------------------------------------------------   | 
+| 1  | Total penjualan ebooks terbanyak dari semua kategori produk, namun hanya menghasilkan keuntungan 3%                          | 
+| 2  | Total penjualan robot termasuk dua terbawah, namun menghasilkan keuntungan paling besar sebanyak 42% dari total sales        |
+| 3  | Kota Washington menjadi penyumbang total sales terbesar dari keseluruhan kota di Amerika                                     |
+| 4  | Berdasarkan garis tren order, dari Januari 2020 sampai Desember 2021 mengalami penurunan, sehingga total sales ikut turun    |
+| 5  | Di antara semua produk yang mengalami penurunan penjualan, hanya training videos saja yang mengalami peningkatan penjualan   |
+| 6  | Top 5 produk yang diorder pelanggan yaitu eBooks, training videos, blueprint, drone kits, dan drones                         |
+| 7  | Top 5 produk berdasarkan total sales yaitu robots, drones, robot kits, drone kits, training videos                           |
+| 8  | Tidak ada pola signifikan dari total order setiap bulannya                                                                   |
+
+
+
+
 
