@@ -7,4 +7,11 @@
 <br>
 
 **Table of Content**
+* Membuat database dan tabel
+* Menentukan relasi antartabel
+* Membuat tabel master
+* Membuat visualisasi looker
+* Menentukan insight dan business recomendations<br>
+- - - 
 
+## Database dan Tabel
